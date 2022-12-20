@@ -1,23 +1,33 @@
 body {
+       margin: 40px 8px;
        height: 100vh;
        width: 100vw;
+       color: #000000;
+       background: linear-gradient(to bottom, #f0dab5, #8dc8e6);
+
        /* background-color: gray; */
    
      
 }
 input {
-
-  color:blue;
+  margin-left: 6px;
+  font-size: 16px;
+  border: 3px solid #678ad5;
+  background-color: #f5f5ff;
+  border-radius: 5px;
+  outline: 0;
 }
 
 .input-and-button-wrapper {
       display: flex;
       justify-content: center;
+      text-align: center;
 }
 
 
 .success {
-      background-color: lightgreen;
+  background-color: #1e3f60;
+  color: #ecf6fd;
       margin: 7px;   
     }
 
@@ -46,6 +56,15 @@ input {
     }
   
 .add-button {
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  width: 56px;
+  height: 32px;
+  text-align: center;
+  background-color: #568cff;
+  margin-left: 8px;
+  filter: drop-shadow(3px 3px 3px #222222);
   margin-left: 8px;
 }
 
@@ -61,7 +80,7 @@ input {
 
 .comment-text {
   font-size: 32px;
-  color: rgb(2, 2, 17);
+  color: white;
 }
 
 .button-and-likes-wrapper {
@@ -72,6 +91,7 @@ input {
 
 .likes-text {
   font-size: 20px;
+  color: white;
 }
 
 .reply-wrapper {
@@ -86,8 +106,10 @@ input {
 }
 .box {
         /* border: 5px solid black; */
-        background-color:  lightgray;
+        /* background-color: #132e48; */
+        background-color:  rgb(129, 98, 98);
         display: flex;
         max-width: max-content;
         
 }
+

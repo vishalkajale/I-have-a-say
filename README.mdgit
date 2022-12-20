@@ -1,8 +1,23 @@
-"# I-have-a-say"  
-init git add README.md
+Project Title ----> I have a say comment-Like-Reply 
 
-git commit -m "first commit"git branch -M main
+This is webpage for comments, like, Reply. it stores user comments and their replies 
+,likes locally. it also supports nested comments,
 
-git remote add origin https://github.com/vishalkajale/I-have-a-say.git
 
-git push -u origin main
+Built using 
+
+html for structuring web pages
+css for styling
+javascript for functionality
+
+I have learned -
+
+javascript functionality.
+create dom objects using javascript.
+nested dom objects.
+
+
+Resources
+
+www.w3schools.com
+

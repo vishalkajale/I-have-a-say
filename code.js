@@ -25,8 +25,7 @@ const saveState = () => {
 };
 
 
-/*********************************************** */
-
+//call for creating comment object
 
 const createCommentObject = (commentText) => {
   return {
@@ -39,7 +38,7 @@ const createCommentObject = (commentText) => {
 
 
 
-/******************************************************* */
+// Function for finding comment object
 
 const findCommentObject = (comments, commentId) => {
   for (let i = 0; i < comments.length; i++) {
@@ -57,8 +56,7 @@ const findCommentObject = (comments, commentId) => {
   }
 };
 
-/*************************************************************************************************/
-
+//function for delete comment
 
 const deleteComment = (comments, commentId) => {
   for (let i = 0; i < comments.length; i++) {
@@ -74,8 +72,7 @@ const deleteComment = (comments, commentId) => {
 };
 
 
-/**********************************************************************************************************/
-
+//create comment nodes
 
 
 const createCommentNode = (comment) => {
@@ -148,7 +145,13 @@ const createCommentNode = (comment) => {
   const cancelReplyButton = document.createElement("button");
   cancelReplyButton.classList.add("button", "delete");
   cancelReplyButton.innerText = "Cancel";
-  cancelReplyButton.onclick = () => commentNode.classList.add("hide-reply");
+  cancelReplyButton.onclick = () => 
+  {
+    replyInput.value = "";
+    commentNode.classList.add("hide-reply");
+    
+  }
+  
 
   const replyCommentsDomArray = comment.replies.map((reply) => {
     return createCommentNode(reply);
@@ -175,8 +178,7 @@ const createCommentNode = (comment) => {
 };
 
 
-/***************************************************** *******************************************/
-
+//rendering all ---> after creating all nodes
 
 const renderComments = () => {
   commentWrapper.innerText = "";
@@ -189,7 +191,7 @@ const renderComments = () => {
 };
 
 
-/******************************************************* *****************************************/
+// add comments after clicking add
 
 const addComment = () => {
   const commentText = commentInput.value;
@@ -215,4 +217,3 @@ addButton.addEventListener("click", addComment);
 renderComments();
 
 
-/************************************************************************* */
