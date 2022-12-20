@@ -85,11 +85,11 @@ const createCommentNode = (comment) => {
   commentNode.classList.add("comment", "hide-reply");
 
   const commentText = document.createElement("div");
-  commentText.classList.add("comment-text");
+  commentText.classList.add("comment-text","box");
   commentText.innerText = comment.text;
 
   const buttonsAndLikesWrapper = document.createElement("div");
-  buttonsAndLikesWrapper.classList.add("button-and-likes-wrapper");
+  buttonsAndLikesWrapper.classList.add("button-and-likes-wrapper","box");
 
   const replyButton = document.createElement("button");
   replyButton.classList.add("button", "success");

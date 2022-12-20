@@ -1,9 +1,13 @@
 body {
        height: 100vh;
        width: 100vw;
-       background-color: gray;
+       /* background-color: gray; */
    
      
+}
+input {
+
+  color:blue;
 }
 
 .input-and-button-wrapper {
@@ -13,12 +17,12 @@ body {
 
 
 .success {
-      background-color: lightblue;
+      background-color: lightgreen;
       margin: 7px;   
     }
 
     .success:hover {
-      background-color: blue;
+      background-color: green;
       transition: all .15s ease-in-out;
     }
 
@@ -57,6 +61,7 @@ body {
 
 .comment-text {
   font-size: 32px;
+  color: rgb(2, 2, 17);
 }
 
 .button-and-likes-wrapper {
@@ -78,4 +83,11 @@ body {
 
 .hide-reply > .reply-wrapper {
   display: none;
+}
+.box {
+        /* border: 5px solid black; */
+        background-color:  lightgray;
+        display: flex;
+        max-width: max-content;
+        
 }
